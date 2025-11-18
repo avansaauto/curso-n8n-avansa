@@ -25,7 +25,7 @@ services:
       - DB_POSTGRESDB_PASSWORD=${POSTGRES_PASSWORD}
       - N8N_BASIC_AUTH_ACTIVE=false
       - GENERIC_TIMEZONE=${GENERIC_TIMEZONE}
-      - N8N_WEBHOOK_URL=${https://bomba-overholy-alaine.ngrok-free.dev}
+      - N8N_WEBHOOK_URL=https://bomba-overholy-alaine.ngrok-free.dev
     volumes:
       - n8n_data:/home/node/.n8n
     depends_on:
